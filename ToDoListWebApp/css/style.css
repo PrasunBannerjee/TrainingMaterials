@@ -1,0 +1,161 @@
+h1,h2,h3,h4,h5,h6, body
+{
+	font-family: "Century Gothic", CenturyGothic, sans-serif;
+	color: #555555;
+}
+
+body
+{
+	
+	font-size:x-large;
+	}
+
+
+.check
+{
+	float:left;
+	
+	}
+.ex
+
+{
+	float:right;
+	}
+
+
+.cross
+{
+	text-decoration:line-through;
+	
+	}
+	
+
+
+.container
+{
+	background-image:url('skulls.png');
+	background-repeat: repeat;
+	margin: 50px 25px 25px;
+	padding: 40px;
+}
+
+
+.baksa
+{
+padding: 20px;
+  margin: 60px 250px;
+
+}
+
+a
+{
+	text-decoration: none;
+	color: #4ba4d7;
+	transition:All 0.5s ease-in-out;
+-webkit-transition:All 0.5s ease-in-out;
+-moz-transition:All 0.5s ease-in-out;
+-o-transition:All 0.5s ease-in-out;
+
+ font-weight: bold;
+
+}
+
+a:hover
+{
+	
+	color: #e50378;
+
+}
+
+.reg-baksa
+{
+min-height: 20px;
+  padding: 20px;
+  margin: 60px 250px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 6px;
+  opacity: 0.8;
+}
+
+input {
+  height: 25px;
+  padding: 10px 50px;
+  font-size: 18px;
+  line-height: 1.33;
+  
+}
+
+
+
+button {
+  display: inline-block;
+  margin-bottom: 0;
+  
+  
+  
+padding: 12px 70px;
+  font-size: 18px;
+  line-height: 1.33;
+
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid transparent;
+  }
+
+
+
+.btn-blue
+{
+	color: #ffffff;
+  background-color: #47a1f5;
+  border-color: #3a95e9;
+
+  transition:All 0.6s ease-in-out;
+-webkit-transition:All 0.6s ease-in-out;
+-moz-transition:All 0.6s ease-in-out;
+-o-transition:All 0.6s ease-in-out;
+}
+
+.btn-blue:hover
+
+ {
+  color: #ffffff;
+  background-color: #0e7ee6;
+  border-color: #285e8e;
+}
+
+
+a.btn-blue
+{
+	padding: 10px 70px;
+  font-size: 18px;
+  line-height: 1.33;
+
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+}
+
+.btn-red
+{
+	color: #ffffff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+
+  transition:All 0.6s ease-in-out;
+-webkit-transition:All 0.6s ease-in-out;
+-moz-transition:All 0.6s ease-in-out;
+-o-transition:All 0.6s ease-in-out;
+}
+
+.btn-red:hover
+ {
+  color: #ffffff;
+  background-color: #d2322d;
+  border-color: #ac2925;
+}
+
