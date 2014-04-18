@@ -19,7 +19,7 @@ body
 	<body>
 <div align="center">
   <h1>To Do list</h1></div>
-	<div class="reg-baksa" align="center">
+	<div class="reg-baksa" align="center"> <hr><br>
 		<form>
         <input type="text" placeholder="Add your checklist" autocomplete="off" /> <button type="submit" class="btn-blue"> Done! </button> 
        
@@ -30,17 +30,51 @@ body
 
 
 
-<div class="listwa">
+<table class="listwa">
       
-     
+      </table>  
       
-      
-      </div>  
+      <p></p>
 </div>
 
 <script src="js/jquery-1.11.0.js"> </script>
 
-<script src="js/toDoList.js"> 
+<script type="text/javascript"> 
+
+$(document).ready(function() {
+    var count=0;
+	
+	$('form').submit(function () {
+    if ($('input').val() !== '') {
+        var input_value = $('input').val();
+
+		 $('.listwa').append('<tr id="'+count+'"><td><span class="check"><input type="checkbox" /></span></td><td> <span class="todo">' + input_value + '</span></td><td><span class="ex"><a href="#">X</a></span></td></tr>').hide().fadeIn("slow");
+       count=count+1;
+    };
+	
+	
+    $('input').val('');
+    return false;
+});
+
+
+
+$(document).on('click', 'a', function (e) {
+    e.preventDefault();
+    $(this).parent().parent().parent().remove();
+});
+	
+
+
+$(document).on('click', 'input[type="checkbox"]', function (e) {
+    var abc = $(this).closest('tr').attr('id');
+    $('#'+abc).toggleClass("cross");
+	});
+		
+
+	
+});
+
 </script>
 
 
